@@ -3,20 +3,25 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "node ./bin/www",
     "test": "mocha",
-    "production": "forever ./bin/www"
+    "production": "forever ./bin/www",
+    "devel": "nodemon ./bin/wwww"
   },
   "dependencies": {
-    "chai": "^3.5.0",
     "debug": "~2.2.0",
     "express": "~4.14.0",
-    "mocha": "^3.2.0",
+    "forever": "^0.15.3",
     "mongoose": "^4.7.4",
     "morgan": "~1.7.0",
     "pug": "~2.0.0-beta6",
     "shortid": "^2.2.6",
     "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
   },
   "description": "A simple url shortner api web application",
   "main": "app.js",
@@ -36,6 +41,6 @@
   },
   "homepage": "https://github.com/tuxitop/url-shortner-api#readme",
   "engines": {
-      "node": "7.2.x"
+    "node": "7.2.x"
   }
 }
