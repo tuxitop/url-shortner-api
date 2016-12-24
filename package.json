@@ -14,6 +14,7 @@
     "mongoose": "^4.7.4",
     "morgan": "~1.7.0",
     "pug": "~2.0.0-beta6",
+    "shortid": "^2.2.6",
     "validator": "^6.2.0"
   },
   "description": "A simple url shortner api web application",
