@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/tuxitop/url-shortner-api/issues"
   },
-  "homepage": "https://github.com/tuxitop/url-shortner-api#readme"
+  "homepage": "https://github.com/tuxitop/url-shortner-api#readme",
+  "engines": {
+      "node": "7.2.x"
+  }
 }
