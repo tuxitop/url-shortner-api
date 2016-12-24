@@ -10,7 +10,18 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:shortid', (req, res, next) => {
-
+    Url.findOne({_id: req.params.shortid}, (err, url) => {
+        if (err) {
+            return next(err);
+        }
+        if (!url) {
+            res.status(400).send({
+                error: "This URL is not found in the database"
+            });
+            return;
+        }
+        res.redirect(url.redirect);
+    });
 });
 
 router.get(/\/new\/(.+)/, (req, res, next) => {
