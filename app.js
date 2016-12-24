@@ -1,10 +1,14 @@
+/* jshint esversion: 6 */
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
+const mongoose = require('mongoose');
 
 var index = require('./routes/index');
 
 var app = express();
+
+mongoose.connect("mongodb://localhost/urlShortnerFCC");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
