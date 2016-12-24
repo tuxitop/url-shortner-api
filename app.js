@@ -8,7 +8,8 @@ var index = require('./routes/index');
 
 var app = express();
 
-mongoose.connect("mongodb://localhost/urlShortnerFCC");
+mongoURI = process.env.MONGOLAB_URI || "mongodb://localhost/urlShortnerFCC";
+mongoose.connect(mongoURI);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
