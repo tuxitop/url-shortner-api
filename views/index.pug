@@ -1,5 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    h2 Guide
+    p.
+        You can pass a url as a paramater after "/new/" and you will recieve a
+        shortend URL in the response. the response would be in JSON format.
+        visiting the shortened url will redirect you to the original link.
+    h2 Example usage
+    h3 Creation
+    p
+        code
+            a(href="/new/http://alimsvi.ir/blog") #{baseURL}/http://alimsvi.ir/blog
+    p
+        code
+            a(href="/new/https://google.com") #{baseURL}/https://google.com
+    h3 Using the shortened url
+    p
+        code
+            a(href="/dj841ks") #{baseURL}/dj841ks
+    h2 Source code
+    p you can find the source code of this website at 
+        a(href="https://github.com/tuxitop/url-shortner-api") github.

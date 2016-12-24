@@ -6,9 +6,10 @@ const Url = require("../models/urls");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Tuxitop URL shortner API', baseURL: req.get('host') });
 });
 
+/* redirection */
 router.get('/:shortid', (req, res, next) => {
     Url.findOne({_id: req.params.shortid}, (err, url) => {
         if (err) {
@@ -24,6 +25,7 @@ router.get('/:shortid', (req, res, next) => {
     });
 });
 
+/* short url creation */
 router.get(/\/new\/(.+)/, (req, res, next) => {
     let newUrl = new Url( {
         redirect: req.params[0]
