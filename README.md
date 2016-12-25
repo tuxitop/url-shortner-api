@@ -27,7 +27,7 @@ https://murmuring-fjord-70054.herokuapp.com/SkCAoG2Vg
 ####Clone the repo
 `git clone https://github.com/tuxitop/url-shortner-api.git`
 
-`cd timestamp-microservice`
+`cd url-shortner-api`
 ####Install the dependecies
 `npm install`
 ####Run the app
