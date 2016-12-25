@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "test": "mocha",
     "production": "forever ./bin/www",
-    "devel": "nodemon ./bin/wwww"
+    "devel": "nodemon ./bin/www"
   },
   "dependencies": {
     "debug": "~2.2.0",
