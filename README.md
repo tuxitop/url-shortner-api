@@ -22,9 +22,9 @@ https://murmuring-fjord-70054.herokuapp.com/SkCAoG2Vg
 
 ## Installation
 
-####Install and configure mongodb
+#### Install and configure mongodb
 
-####Clone the repo
+#### Clone the repo
 `git clone https://github.com/tuxitop/url-shortner-api.git`
 
 `cd url-shortner-api`
