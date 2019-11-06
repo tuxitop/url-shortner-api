@@ -28,9 +28,9 @@ https://murmuring-fjord-70054.herokuapp.com/SkCAoG2Vg
 `git clone https://github.com/tuxitop/url-shortner-api.git`
 
 `cd url-shortner-api`
-####Install the dependecies
+#### Install the dependecies
 `npm install`
-####Run the app
+#### Run the app
 `npm start`
 
 you can view it by visiting [http://localhost:3000](http://localhost:3000) with a browser.
