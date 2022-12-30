@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "nodemon": "^1.11.0"
   },
   "description": "A simple url shortner api web application",
